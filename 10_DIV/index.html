@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag div | HTML5</title>
+    <style>
+        
+        /* div tem o diplay do tipo block */
+        .container {
+            display: flex;
+            flex-direction: column-reverse;
+            border: 1px solid black;
+        }
+
+        .container-sec {
+            background-color: blue;
+            width: 400px;
+            height: 400px;  
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .div-1, .div-2 {
+          background-color: red;  
+          width: 100px;
+          height: 100px;
+          color: #fff;
+        }
+
+        .div-2 {
+            background-color: gray;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo do HTML5</h1>
+    <p>A tag div é uma divisão, para ajustar outros elementos dentro dela</p>
+    <hr>
+    <!-- Div é uma tag sem semantica, utilizamos para agrupar elementos dentro -->
+    <div class="container">
+        <h2>Meu container</h2>
+        <a href="#">Facebook</a>
+        <a href="#">YouTube</a>
+    </div>
+
+    <div class="container-sec">
+        <div class="div-1">01</div>
+        <div class="div-2">02</div>
+    </div>
+</body>
+</html>
